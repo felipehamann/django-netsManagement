@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Redes de Acuicultura</h1>
+    <ul>
+        {% for net in nets %}
+            <li>{{ net.net_id }} - {{ net.dimensions }} - {{ net.company }} - {{ net.movement }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
